@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
+        android:background="@drawable/dialouge_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="please type the onr time\n
+verification code sent to \n +91-8800213296"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPT Verification Code"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:28"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+        <TextView
+            android:id="@+id/tv_verify"
+            style="@style/greenButton"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="Verify" />
+
+    </LinearLayout>
+
+</RelativeLayout>

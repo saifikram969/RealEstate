@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.btjnonbrokerage.Fragment.MainFragment.NotificationListFragment">
+
+
+
+    <include
+        android:id="@+id/common_toolbar_notifications"
+        layout="@layout/common_toolbar"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_noNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/no_notification_found"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_100sdp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No data found for this notification."
+            android:textColor="@color/Darkblue"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

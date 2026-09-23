@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.btjnonbrokerage.Fragment.MainFragment.PaymentVerificationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/back_toolbar"
+            layout="@layout/common_toolbar" />
+
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_below="@id/back_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Payment Type" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:hint="House Rent">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Your Name" />
+            <EditText
+                android:id="@+id/yourname"
+                style="@style/editTextNonBrokerage"
+                android:hint="Enter your name"
+                android:drawableStart="@drawable/solar_user_circle_linear"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Mobile Number" />
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hbb20.CountryCodePicker
+                    android:layout_marginStart="@dimen/_10sdp"
+                    style="@style/myEditText"
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_55sdp"
+                    app:ccp_contentColor="@color/boldTextColor"
+                    app:ccp_showFlag="false"
+                    app:ccp_showArrow="false"
+                    app:ccp_showNameCode="false"/>
+
+
+                <TextView
+                    android:id="@+id/tv_user_no"
+                    style="@style/myEditText"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:drawableStart="@drawable/call"
+                    android:inputType="number"
+                    android:textSize="@dimen/_14sdp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept the"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/tv_term_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Darkblue"
+                    android:text="Terms &amp; Conditions"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_get_started"
+                style="@style/greenButton"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_28sdp"
+                android:text="Get Started" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

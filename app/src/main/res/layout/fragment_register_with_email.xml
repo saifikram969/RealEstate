@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/ns_register"
+    android:orientation="vertical"
+    tools:context="com.btjnonbrokerage.Fragment.Auth.RegisterWithEmailFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar_create_account"
+            layout="@layout/common_toolbar" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_register_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="@dimen/_3sdp"
+                app:civ_border_color="@color/green"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_avatar" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_user_edit"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                app:tint="@color/Darkblue"
+                android:src="@drawable/editing" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Select Type:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/background_myedit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etUserNameRE"
+            style="@style/editTextStyle"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/icc_account"
+            android:hint="Full name"
+            android:inputType="textCapSentences" />
+        <EditText
+            android:id="@+id/etUserGmail"
+            style="@style/editTextStyle"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/email"
+            android:hint="Gmail"
+            android:inputType="textEmailAddress" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countryCodeRegister"
+                style="@style/editTextStyle"
+                android:text="+91"
+                android:gravity="center"
+                android:layout_width="wrap_content" />
+
+            <EditText
+                android:id="@+id/etPHoneNumber"
+                style="@style/editTextStyle"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:drawableStart="@drawable/call"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="10" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Address" />
+
+        <EditText
+            style="@style/addPropertyEditTextStyle"
+            android:id="@+id/et_address"
+            android:textColorHint="#808080"
+            android:drawableStart="@drawable/bx_home"
+            android:inputType="textCapSentences"
+            android:hint="Address"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_office_name_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Office Name" />
+
+        <EditText
+            style="@style/addPropertyEditTextStyle"
+            android:id="@+id/et_office_name"
+            android:textColorHint="#808080"
+            android:drawableStart="@drawable/icon_park_outline_city"
+            android:inputType="textCapSentences"
+            android:hint="Office Name"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Office photo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_choose_file"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="choose file"
+                android:textColor="@color/white"
+                android:background="@color/greenCreateAccount"
+                android:layout_marginStart="15dp"
+                />
+            <TextView
+                android:id="@+id/tv_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No file chosen"
+                android:layout_marginStart="9dp" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegisterBtnRE"
+            style="@style/greenButton"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="Register" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_weight="5"
+                android:background="#ECEDF3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_weight="5"
+                android:background="#ECEDF3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Have an account?"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="LogIn"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#1F4C6B"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.btjnonbrokerage.Fragment.Profile.EditProfileFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/toolbarEditProfile"
+            layout="@layout/common_toolbar"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rv_edit_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="@dimen/_3sdp"
+                app:civ_border_color="@color/green"
+                android:id="@+id/profile_image_edit"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_avatar" />
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_user_edit"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                app:tint="@color/Darkblue"
+                android:src="@drawable/editing" />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/icc_account"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Name"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/_15sdp" />
+
+
+
+        <TextView
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/call"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Phone number"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/tvSaveEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="Save"
+            android:textAlignment="center"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/signupback"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

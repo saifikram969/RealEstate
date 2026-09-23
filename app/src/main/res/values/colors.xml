@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="magenta">#E71D1D</color>
+    <color name="green">#8BC83F</color>
+    <color name="textcolorblue">#1F4C6B</color>
+    <color name="textcolor1">#53587A</color>
+    <color name="textcolor">#1F4C6B</color>
+    <color name="colorSnackBarSuccess">#8BC34A</color>
+    <color name="colorSnackBarError">#F72400</color>
+    <color name="yellow">#F7DE00</color>
+
+    <color name="grayRealEstate">#F5F4F8</color>
+    <color name="Darkgray1">#53587A</color>
+    <color name="boldTextColor">#252B5C</color>
+    <color name="textAcc">#234F68</color>
+    <color name="Darkblue">#252B5C</color>
+    <color name="greenCreateAccount">#8BC83F</color>
+
+    <color name="cardViewSelectBg">#1F4C6B</color>
+
+
+<!--    kunal added to resolve some conflicts-->
+    <color name="tc">#000000</color>
+    <color name="background_color">#C1C1C1</color>
+    <color name="Darkgray">#C1C1C1</color>
+    <color name="text_color">#000000</color>
+    <color name="gray_soft">#F5F4F8</color>
+    <color name="simmerColor">#DFDDE2</color>
+    <color name="dividerLine">#ccd1d1</color>
+    <color name="grey">#808080</color>
+
+
+
+
+
+</resources>

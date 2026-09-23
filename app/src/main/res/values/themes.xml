@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.btjnonbrokerage" parent="Theme.Material3.Light.NoActionBar" >
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+
+    <style name="Theme.btjnonbrokerage" parent="Base.Theme.btjnonbrokerage">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="cardview_back">
+        <item name="android:foreground">@drawable/button_gradient</item>
+    </style>
+
+
+    <style name="myEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_55sdp</item>
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_10sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/edittext</item>
+    </style>
+
+
+
+
+</resources>

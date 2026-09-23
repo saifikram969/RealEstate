@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.btjnonbrokerage.Fragment.Rent.UpiPayRentFragment">
+
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="UPI Id" />
+
+
+    <EditText
+        style="@style/myEditText"
+        android:hint="Enter your name"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Property Address" />
+
+    <EditText
+        android:id="@+id/etPropertyAddress"
+        style="@style/myEditText"
+        android:hint="Enter your name"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Rent Amount" />
+
+
+    <EditText
+        style="@style/myEditText"
+        android:hint="Enter your name"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"/>
+
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Beneficiary's PAN" />
+
+
+    <EditText
+        style="@style/myEditText"
+        android:hint="Enter your name"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Beneficiary's PAN (Required if amount > 50k)" />
+
+
+    <EditText
+        style="@style/myEditText"
+        android:hint="Tenant's PAN "
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Upload Rental Agreement ()" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/payu_bottom_sheet_rounded_corner"
+    style="@style/Animation.Design.BottomSheetDialog"
+    android:orientation="vertical"
+    tools:context="com.btjnonbrokerage.Fragment.BottomSheet.AccountCreatedFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slide"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/alert___success" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your listing just"
+            android:textSize="20dp"
+            android:textColor="@color/tc"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="successfully updated"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/textAcc"
+        android:layout_marginStart="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Darkgray"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:gravity="center"
+        android:background="@drawable/finish"
+        android:padding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_200sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="34dp"/>
+
+
+</LinearLayout>

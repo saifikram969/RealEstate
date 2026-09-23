@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="false">BTJ Non Brokerage</string>
+
+    <string name="description" translatable="false">building</string>
+
+    <string name="likeHeart" translatable="false">like button</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="some_error_occurred" translatable="false">PayU error\n</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="kid_s_familiy" translatable="false">Kid\'s familiy</string>
+    <string name="park" translatable="false">Park</string>
+    <string name="gym" translatable="false">Gym</string>
+    <string name="garden" translatable="false">Garden</string>
+    <string name="pet_allowed" translatable="false">Pet Allowed</string>
+    <string name="parking_lot" translatable="false">Parking Lot</string>
+    <string name="environment_facilities" translatable="false">Environment / Facilities</string>
+    <string name="google_maps_key">AIzaSyBi4J1n1K3BnDqQUI7nS6cnBt8uukAB0ec</string>
+    <string name="real_estate" translatable="false">Real Estate</string>
+
+    <string name="default_notification_channel_id" translatable="false">default_channel_id</string>
+
+
+    <string name="paymentId" translatable="false">Payment Id :</string>
+    <string name="pay_type" translatable="false">Pay Type :</string>
+    <string name="landlord_name" translatable="false">Landlord Name :</string>
+    <string name="landload_phone" translatable="false">Landlord Phone :</string>
+    <string name="payment_mode" translatable="false">Payment Mode :</string>
+    <string name="payment_status" translatable="false">Payment Status :</string>
+    <string name="date" translatable="false">Date :</string>
+    <string name="edit_profile" translatable="false">Edit Profile</string>
+    <string name="add_property" translatable="false">Add Property</string>
+
+</resources>

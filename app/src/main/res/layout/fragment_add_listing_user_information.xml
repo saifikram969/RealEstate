@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.btjnonbrokerage.Fragment.AddProperty.AddListingAddressFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <include
+            android:id="@+id/toolbar_addListingAddress"
+            layout="@layout/common_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="First Name"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Last Name"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <LinearLayout
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="@integer/material_motion_duration_long_1"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Fisrt name"
+                    android:textColorHint="@color/Darkblue" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/profile"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Last name"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColorHint="@color/Darkblue"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Phone Number"
+            android:textSize="@dimen/_13sdp" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_marginStart="@dimen/_10sdp"
+                style="@style/myEditText"
+                android:id="@+id/countryCodePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_55sdp"
+                app:ccp_contentColor="@color/boldTextColor"
+                app:ccp_showFlag="true"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"/>
+
+
+            <EditText
+                style="@style/myEditText"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:hint="Enter Mobile number"
+                android:drawableStart="@drawable/call"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Email Address"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_weight="@integer/material_motion_duration_long_1"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/email1"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Email Address"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColorHint="@color/Darkblue"
+
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

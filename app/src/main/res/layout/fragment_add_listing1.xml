@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.btjnonbrokerage.Fragment.AddProperty.AddListing1Fragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar_addListing1"
+                layout="@layout/common_toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Darkblue"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_20sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fill detail of your "
+                        android:textColor="@color/Darkblue"
+                        android:textSize="@dimen/_20sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Property"
+                        android:textColor="@color/Darkblue"
+                        android:textSize="@dimen/_20sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_property_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:inputType="textCapSentences"
+                android:background="@drawable/edittext"
+                android:drawableEnd="@drawable/house"
+
+                android:hint="house/property/society name"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <TextView
+                style="@style/addPropertyTextStyle"
+                android:text="House Description"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/et_property_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:visibility="gone"
+                android:inputType="textCapSentences"
+                android:background="@drawable/edittext"
+                android:drawableEnd="@drawable/house"
+                android:hint="3 BHK Furnished Flat"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp" />
+
+
+
+            <TextView
+                style="@style/addPropertyTextStyle"
+                android:text="Select Property category"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_category_house"
+                    android:layout_width="128.8dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/yearlybuttoncolor"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="House"
+                    android:textColor="#252B5C" />
+
+                <TextView
+                    android:id="@+id/tv_category_apartment"
+                    android:layout_width="128.8dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/yearlybuttoncolor"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Apartment"
+                    android:textColor="#252B5C" />
+                <TextView
+                    android:id="@+id/tv_category_flat"
+                    android:layout_width="128.8dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/yearlybuttoncolor"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Flat"
+                    android:textColor="#252B5C" />
+
+            </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+            style="@style/addPropertyTextStyle"
+            android:text="Select Property Type"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_type_furnished"
+                        android:layout_width="128.8dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/yearlybuttoncolor"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Furnished"
+                        android:textColor="#252B5C" />
+
+                    <TextView
+                        android:id="@+id/tv_type_semifurnished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/yearlybuttoncolor"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Semi-Furnished"
+                        android:textColor="#252B5C" />
+
+                    <TextView
+                        android:id="@+id/tv_type_unfurnished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/yearlybuttoncolor"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="UnFurnished"
+                        android:textColor="#252B5C" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:gravity="center">
+
+        <include
+            android:id="@+id/in_next_btn"
+            layout="@layout/item_back_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

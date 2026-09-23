@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.btjnonbrokerage.Fragment.TopEstateOwnerFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topAgent_toolbar"
+        layout="@layout/common_toolbar"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Top Estate Owner"
+        android:textSize="@dimen/_24sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find the best recommendations place to live"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_top_owners"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+</ScrollView>

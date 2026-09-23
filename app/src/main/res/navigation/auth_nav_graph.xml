@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.btjnonbrokerage.Fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/auth_nav_graph.xml" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_topLocationsFragment"
+            app:destination="@id/topLocationsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_featuredListFeaturedEstateFragment2"
+            app:destination="@id/featuredListFeaturedEstateFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_homeSaleFragment"
+            app:destination="@id/homeSaleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topEstateOwnerFragment2"
+            app:destination="@id/topEstateOwnerFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFilterFragment"
+            app:destination="@id/searchFilterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topUserProfileFragment"
+            app:destination="@id/topUserProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationListFragment"
+            app:destination="@id/notificationListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment2"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentVerificationFragment"
+            app:destination="@id/paymentVerificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addListing1Fragment"
+            app:destination="@id/addListing1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFormFragment"
+        android:name="com.btjnonbrokerage.Fragment.Auth.LogInFormFragment"
+        android:label="fragment_log_in_form"
+        tools:layout="@layout/fragment_log_in_form" >
+        <action
+            android:id="@+id/action_logInFormFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_logInFormFragment_to_OTP_Fragment"
+            app:destination="@id/OTP_Fragment" />
+        <action
+            android:id="@+id/action_logInFormFragment_to_RegisterWithEmailFragment"
+            app:destination="@id/RegisterWithEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.btjnonbrokerage.Fragment.OnboardingScreens.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_logInFormFragment"
+            app:destination="@id/logInFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterWithEmailFragment"
+        android:name="com.btjnonbrokerage.Fragment.Auth.RegisterWithEmailFragment"
+        android:label="fragment_register_with_email"
+        tools:layout="@layout/fragment_register_with_email" >
+        <action
+            android:id="@+id/action_registerWithEmailFragment_to_OTP_Fragment"
+            app:destination="@id/OTP_Fragment" />
+        <action
+            android:id="@+id/action_registerWithEmailFragment_to_logInFormFragment"
+            app:destination="@id/logInFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topLocationsFragment"
+        android:name="com.btjnonbrokerage.Fragment.TopLocationsFragment"
+        android:label="fragment_top_locations"
+        tools:layout="@layout/fragment_top_locations" >
+        <action
+            android:id="@+id/action_topLocationsFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_topLocationsFragment_to_topUserProfileFragment"
+            app:destination="@id/topUserProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="searchFilter"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.btjnonbrokerage.Fragment.Profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_addListing1Fragment"
+            app:destination="@id/addListing1Fragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_detailFullFragment2"
+            app:destination="@id/detailFullFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_logInFormFragment"
+            app:destination="@id/logInFormFragment"
+            app:popUpTo="@id/auth_nav_graph.xml"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileFragment_to_myPaymentFragment"
+            app:destination="@id/myPaymentFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userMyPropertyFragment"
+            app:destination="@id/userMyPropertyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment2"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chatWithAdminFragment"
+            app:destination="@id/chatWithAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/featuredListFeaturedEstateFragment2"
+        android:name="com.btjnonbrokerage.Fragment.FeaturedListFeaturedEstateFragment"
+        android:label="fragment_featured_list_featured_estate"
+        tools:layout="@layout/fragment_featured_list_featured_estate" >
+
+        <argument
+            android:name="searchFilter"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_featuredListFeaturedEstateFragment2_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addListingFragment3"
+        android:name="com.btjnonbrokerage.Fragment.AddProperty.AddListingFragment3"
+        android:label="fragment_add_listing3"
+        tools:layout="@layout/fragment_add_listing3" >
+        <argument
+            android:name="propertyName"
+            app:argType="string" />
+        <argument
+            android:name="Category"
+            app:argType="string" />
+        <argument
+            android:name="countyCode"
+            app:argType="string" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="pincode"
+            app:argType="string" />
+        <argument
+            android:name="imgList"
+            app:argType="com.btjnonbrokerage.Model.ImgList" />
+        <action
+            android:id="@+id/action_addListingFragment3_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_addListingFragment3_to_addListing1Fragment"
+            app:destination="@id/addListing1Fragment" />
+        <argument
+            android:name="address2"
+            app:argType="string" />
+        <argument
+            android:name="propertyDescription"
+            app:argType="string" />
+        <argument
+            android:name="lat"
+            app:argType="string" />
+        <argument
+            android:name="long"
+            app:argType="string" />
+        <argument
+            android:name="propertyType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.btjnonbrokerage.Fragment.WelcomeScreen"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" />
+    <fragment
+        android:id="@+id/OTP_Fragment"
+        android:name="com.btjnonbrokerage.Fragment.OTP_Fragment"
+        android:label="fragment_o_t_p_"
+        tools:layout="@layout/fragment_o_t_p_" >
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_OTP_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/auth_nav_graph.xml" />
+    </fragment>
+    <fragment
+        android:id="@+id/addListing2Fragment"
+        android:name="com.btjnonbrokerage.Fragment.AddProperty.AddListing2Fragment"
+        android:label="fragment_add_listing2"
+        tools:layout="@layout/fragment_add_listing2" >
+        <action
+            android:id="@+id/action_addListing2Fragment_to_addListingFragment3"
+            app:destination="@id/addListingFragment3" />
+        <argument
+            android:name="propertyName"
+            app:argType="string" />
+        <argument
+            android:name="Category"
+            app:argType="string" />
+        <argument
+            android:name="countyCode"
+            app:argType="string" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="pincode"
+            app:argType="string" />
+        <argument
+            android:name="address2"
+            app:argType="string" />
+        <argument
+            android:name="propertyDescription"
+            app:argType="string" />
+        <argument
+            android:name="propertyType"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addListing1Fragment"
+        android:name="com.btjnonbrokerage.Fragment.AddProperty.AddListing1Fragment"
+        android:label="AddListing1Fragment" >
+        <action
+            android:id="@+id/action_addListing1Fragment_to_addListingAddressFragment"
+            app:destination="@id/addListingAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFullFragment"
+        android:name="com.btjnonbrokerage.Fragment.DetailFullFragment"
+        android:label="fragment_detail_full"
+        tools:layout="@layout/fragment_detail_full" >
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFullFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_detailFullFragment_to_ALLReviewFragment"
+            app:destination="@id/ALLReviewFragment" />
+        <action
+            android:id="@+id/action_detailFullFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_detailFullFragment_to_editPropertyFragment"
+            app:destination="@id/editPropertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.btjnonbrokerage.Fragment.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <argument
+            android:name="property_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_reviewFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingTour1Fragment"
+        android:name="com.btjnonbrokerage.Fragment.OnboardingScreens.OnboardingTour1Fragment"
+        android:label="fragment_onboarding_tour1"
+        tools:layout="@layout/fragment_onboarding_tour1" />
+    <fragment
+        android:id="@+id/onBoardingTour2Fragment"
+        android:name="com.btjnonbrokerage.Fragment.OnboardingScreens.OnBoardingTour2Fragment"
+        android:label="fragment_on_boarding_tour2"
+        tools:layout="@layout/fragment_on_boarding_tour2" />
+    <fragment
+        android:id="@+id/onBoardingTour3Fragment"
+        android:name="com.btjnonbrokerage.Fragment.OnboardingScreens.OnBoardingTour3Fragment"
+        android:label="fragment_on_boarding_tour3"
+        tools:layout="@layout/fragment_on_boarding_tour3" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.btjnonbrokerage.Fragment.Profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addListingAddressFragment"
+        android:name="com.btjnonbrokerage.Fragment.AddProperty.AddListingAddressFragment"
+        android:label="fragment_add_listing_address"
+        tools:layout="@layout/fragment_add_listing_address" >
+        <argument
+            android:name="houseName"
+            app:argType="string" />
+        <argument
+            android:name="Category"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addListingAddressFragment_to_addListing2Fragment"
+            app:destination="@id/addListing2Fragment" />
+        <argument android:name="propertyDescription"
+            app:argType="string" />
+        <argument
+            android:name="propertyType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeSaleFragment"
+        android:name="com.btjnonbrokerage.Fragment.HomeSaleFragment"
+        android:label="fragment_home_sale"
+        tools:layout="@layout/fragment_home_sale" />
+    <fragment
+        android:id="@+id/topEstateOwnerFragment2"
+        android:name="com.btjnonbrokerage.Fragment.TopEstateOwnerFragment"
+        android:label="fragment_top_estate_owner"
+        tools:layout="@layout/fragment_top_estate_owner" >
+        <action
+            android:id="@+id/action_topEstateOwnerFragment2_to_topUserProfileFragment"
+            app:destination="@id/topUserProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFilterFragment"
+        android:name="com.btjnonbrokerage.Fragment.BottomSheet.SearchFilterFragment"
+        android:label="SearchFilterFragment" >
+        <argument
+            android:name="searchFilter"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/topUserProfileFragment"
+        android:name="com.btjnonbrokerage.Fragment.Profile.TopUserProfileFragment"
+        android:label="fragment_top_user_profile"
+        tools:layout="@layout/fragment_top_user_profile" >
+        <argument
+            android:name="Uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_topUserProfileFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationListFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.NotificationListFragment"
+        android:label="fragment_notification_list"
+        tools:layout="@layout/fragment_notification_list" />
+    <fragment
+        android:id="@+id/ALLReviewFragment"
+        android:name="com.btjnonbrokerage.Fragment.ALLReviewFragment"
+        android:label="fragment_a_l_l_review"
+        tools:layout="@layout/fragment_a_l_l_review" >
+        <argument
+            android:name="property_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentVerificationFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.PaymentVerificationFragment"
+        android:label="fragment_payment_verification"
+        tools:layout="@layout/fragment_payment_verification" >
+        <action
+            android:id="@+id/action_paymentVerificationFragment_to_payRentFragment"
+            app:destination="@id/payRentFragment" />
+        <action
+            android:id="@+id/action_paymentVerificationFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPropertyFragment"
+        android:name="com.btjnonbrokerage.Fragment.EditPropertyFragment"
+        android:label="fragment_edit_property"
+        tools:layout="@layout/fragment_edit_property" >
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editPropertyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payUFragment"
+        android:name="com.btjnonbrokerage.Fragment.PayUFragment"
+        android:label="fragment_pay_u"
+        tools:layout="@layout/fragment_pay_u" />
+<!--    <fragment-->
+<!--        android:id="@+id/mapsFragment"-->
+<!--        android:name="com.btjnonbrokerage.Fragment.GoogleMap.MapsFragment"-->
+<!--        android:label="fragment_maps"-->
+<!--        tools:layout="@layout/fragment_maps" >-->
+
+<!--        <argument-->
+<!--            android:name="propertyName"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="Category"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="countyCode"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="phoneNumber"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="address"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="state"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="city"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="pincode"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="imgList"-->
+<!--            app:argType="com.nonbrokerage.Model.ImgList" />-->
+<!--        <argument-->
+<!--            android:name="address2"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="propertyDescription"-->
+<!--            app:argType="string" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/accountCreatedFragment"
+        android:name="com.btjnonbrokerage.DialogBox.AccountCreatedFragment"
+        android:label="fragment_account_created2"
+        tools:layout="@layout/fragment_account_created2" />
+    <fragment
+        android:id="@+id/payUpiFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.PayUpiFragment"
+        android:label="fragment_pay_upi"
+        tools:layout="@layout/fragment_pay_upi" />
+    <fragment
+        android:id="@+id/payRentFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.PayRentFragment"
+        android:label="fragment_pay_rent"
+        tools:layout="@layout/fragment_pay_rent" >
+        <argument
+            android:name="pay_token"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_payRentFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/auth_nav_graph.xml"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/payAccountFragment"
+        android:name="com.btjnonbrokerage.Fragment.MainFragment.PayAccountFragment"
+        android:label="fragment_pay_account"
+        tools:layout="@layout/fragment_pay_account" />
+    <fragment
+        android:id="@+id/myPaymentFragment"
+        android:name="com.btjnonbrokerage.Fragment.Payment.MyPaymentFragment"
+        android:label="fragment_my_payment"
+        tools:layout="@layout/fragment_my_payment" >
+        <action
+            android:id="@+id/action_myPaymentFragment_to_singlepaymentDetailFragment"
+            app:destination="@id/singlepaymentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singlepaymentDetailFragment"
+        android:name="com.btjnonbrokerage.Fragment.Payment.SinglepaymentDetailFragment"
+        android:label="fragment_singlepayment_detail"
+        tools:layout="@layout/fragment_singlepayment_detail" >
+        <argument
+            android:name="paymentHIstory"
+            app:argType="com.btjnonbrokerage.Fragment.Payment.MyPayment.PaymentHistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.btjnonbrokerage.Fragment.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view">
+        
+        <argument
+            android:name="WebUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMyPropertyFragment"
+        android:name="com.btjnonbrokerage.Fragment.UserMyPropertyFragment"
+        android:label="fragment_user_my_property"
+        tools:layout="@layout/fragment_user_my_property" >
+        <action
+            android:id="@+id/action_userMyPropertyFragment_to_addListing1Fragment"
+            app:destination="@id/addListing1Fragment" />
+        <action
+            android:id="@+id/action_userMyPropertyFragment_to_detailFullFragment"
+            app:destination="@id/detailFullFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseChatFragment"
+        android:name="com.btjnonbrokerage.Fragment.FirebaseChatFragment"
+        android:label="FirebaseChatFragment" />
+    <fragment
+        android:id="@+id/chatWithAdminFragment"
+        android:name="com.btjnonbrokerage.Fragment.Chat.ChatWithAdminFragment"
+        android:label="fragment_chat_with_admin"
+        tools:layout="@layout/fragment_chat_with_admin" />
+
+</navigation>

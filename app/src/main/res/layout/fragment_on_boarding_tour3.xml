@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.btjnonbrokerage.Fragment.OnboardingScreens.OnBoardingTour3Fragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="@dimen/_79sdp"
+                android:src="@drawable/maskgroup" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Find"
+                android:textColor="#2A3467"
+                android:textSize="@dimen/_25sdp" />
+
+            <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=" perfect choice"
+                android:textColor="#204D6C"
+                android:textSize="@dimen/_25sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=" for"
+                android:textColor="#2A3467"
+                android:textSize="@dimen/_25sdp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="your stay"
+            android:textColor="#2A3467"
+            android:textSize="@dimen/_25sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="The perfect choice for your future"
+            android:textColor="#53587A"
+            android:textSize="@dimen/_16sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/rectangle7">
+
+            <ImageView
+                android:id="@+id/iv_back_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_325sdp"
+                android:background="@drawable/background"
+                android:elevation="@dimen/_1sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/onboardFinishbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_325sdp"
+                android:background="@drawable/signupback"
+                android:backgroundTint="#8BC83F"
+                android:ems="8"
+                android:padding="@dimen/_10sdp"
+                android:text="Finish"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

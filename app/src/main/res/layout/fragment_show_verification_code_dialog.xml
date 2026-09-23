@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_18sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.btjnonbrokerage.DialogBox.ShowVerificationCodeDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/dialouge_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="please type the one time\n
+verification code sent to"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 9876543210"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPT Verification Code"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"/>
+        <com.chaos.view.PinView
+            android:id="@+id/pinview"
+            android:layout_centerHorizontal="true"
+            app:itemCount="6"
+            app:lineWidth="1dp"
+            app:itemWidth="@dimen/_30sdp"
+            app:itemHeight="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:itemBackground="@color/grayRealEstate"
+            android:cursorVisible="true"
+            app:hideLineWhenFilled="false"
+            app:itemRadius="10dp"
+            style="@style/PinWidget.PinView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </com.chaos.view.PinView>
+        <TextView
+            android:id="@+id/tv_otp_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:28"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+        <TextView
+            android:id="@+id/tv_verify"
+            style="@style/greenButton"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="Verify" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

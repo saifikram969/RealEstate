@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "417336018263",
+    "firebase_url": "https://non-brokerage-default-rtdb.firebaseio.com",
+    "project_id": "non-brokerage",
+    "storage_bucket": "non-brokerage.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417336018263:android:0ff3ffddd25e4690986a12",
+        "android_client_info": {
+          "package_name": "com.btjnonbrokerage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2_C00mOM1ggaWd0J-aQaT1CtRuyLx7aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417336018263:android:aa4cbd1faefd8374986a12",
+        "android_client_info": {
+          "package_name": "com.nonbrokerage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2_C00mOM1ggaWd0J-aQaT1CtRuyLx7aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417336018263:android:9118d0574001477d986a12",
+        "android_client_info": {
+          "package_name": "com.websinfotech.nonbrokerageadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2_C00mOM1ggaWd0J-aQaT1CtRuyLx7aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

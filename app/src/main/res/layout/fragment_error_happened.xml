@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/payu_bottom_sheet_rounded_corner"
+    android:orientation="vertical"
+    tools:context="com.btjnonbrokerage.Fragment.BottomSheet.AccountCreatedFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slide"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/alert___danger" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aw snap, Something"
+            android:textSize="20dp"
+            android:textColor="@color/textcolor"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="error"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins"
+
+            android:textStyle="bold"
+            android:textColor="@color/textAcc"
+            android:layout_marginStart="@dimen/_5sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="happened"
+            android:textSize="20dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textcolor"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet,consectetur"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Darkgray1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="168.5dp"
+            android:layout_height="70dp"
+            android:text="Add More"
+            android:gravity="center"
+            android:background="@drawable/addmore"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/Darkblue"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="168.5dp"
+            android:layout_height="70dp"
+            android:text="Retry"
+            android:gravity="center"
+            android:background="@drawable/finish"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_135sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_25sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#F5F4F8"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/building_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_demo" />
+
+                    <ImageView
+                        style="@style/likeButton"
+                        android:id="@+id/heart_icon"
+                        android:scaleType="fitXY"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        android:backgroundTint="#234F68"
+                        android:minWidth="@dimen/_55sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/property_category"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_8sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Apartment"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/property_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:maxLines="2"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sky Dandelions \nApartment"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                     />
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/addressCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/Darkblue"/>
+                    <TextView
+                        android:id="@+id/addressState"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/Darkblue"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/yello_star"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/star_icon" />
+
+                    <TextView
+                        android:id="@+id/rating_tv"
+                        android:layout_toRightOf="@id/yello_star"
+                        android:layout_alignBottom="@id/yello_star"
+                        android:text="0.0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_weight="@integer/material_motion_duration_long_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/Darkblue"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_month_or_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/Darkblue"
+                    android:textSize="@dimen/_8sdp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/building_image"
+            app:layout_constraintStart_toEndOf="@+id/building_image">
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

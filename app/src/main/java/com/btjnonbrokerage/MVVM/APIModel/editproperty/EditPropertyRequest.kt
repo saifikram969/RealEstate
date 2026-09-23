@@ -1,0 +1,32 @@
+package com.btjnonbrokerage.MVVM.APIModel.editproperty
+
+data class EditPropertyRequest(
+    val address: String,
+    val address2: String,
+    val balcony: String,
+    val bathroom: String,
+    val bedroom: String,
+    val category: String,
+    val city: String,
+    val env_facility: List<String>,
+    val facing: String,
+    val hall: String,
+    val kitchen: String,
+    val list_type: String,
+    val phone_code: String,
+    val phone_number: String,
+    val pincode: String,
+    val plan_type: String,
+    val pr_img: List<String>,
+    val pr_name: String,
+    val price: String,
+    val prop_desc: String,
+    val property_id: String,
+    val state: String,
+    val total_room: String,
+    val uid: String,
+    val secure_deposit : String,
+    val available_from : String,
+    val furnished : String,
+    val area : String
+)

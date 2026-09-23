@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_10sdp"
+    tools:context=".DialogBox.StandardPaymentFragment">
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_gravity="center"
+            android:text="Standard payment"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to select payment (2.5%).\n The extra charge on your rent "/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
