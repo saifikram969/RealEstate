@@ -18,9 +18,9 @@ import com.cashfree.pg.core.api.webcheckout.CFWebCheckoutTheme.CFWebCheckoutThem
 
 class CashFreePaymentActivity : AppCompatActivity(),CFCheckoutResponseCallback {
 
-    private val orderID = "YOUR_ORDER_ID"  // Backend से लेना होगा
-    private val paymentSessionID = "YOUR_PAYMENT_SESSION_ID"  // Backend से लेना होगा
-    private val cfEnvironment = CFSession.Environment.SANDBOX  // या PRODUCTION
+    private val orderID = "YOUR_ORDER_ID"  // Needs to be fetched from Backend
+    private val paymentSessionID = "YOUR_PAYMENT_SESSION_ID"  // Needs to be fetched from Backend
+    private val cfEnvironment = CFSession.Environment.SANDBOX  // or PRODUCTION
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -30,20 +30,20 @@ class CashFreePaymentActivity : AppCompatActivity(),CFCheckoutResponseCallback {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Cashfree Payment Callback सेट करें
+        // Set Cashfree Payment Callback
         try {
             CFPaymentGatewayService.getInstance().setCheckoutCallback(this)
-            startWebCheckoutPayment() // Payment शुरू करें
+            startWebCheckoutPayment() // Start Payment
         } catch (e: CFException) {
             e.printStackTrace()
             
         }
     }
 
-    // ✅  Step 1: Web Checkout शुरू करें
+    // ✅  Step 1: Start Web Checkout
     private fun startWebCheckoutPayment() {
         try {
-            // Session बनाएं
+            // Create Session
             val cfSession = CFSession.CFSessionBuilder()
                 .setEnvironment(cfEnvironment)
                 .setPaymentSessionID(paymentSessionID)
@@ -52,27 +52,27 @@ class CashFreePaymentActivity : AppCompatActivity(),CFCheckoutResponseCallback {
 
             // Theme Customization (Optional)
             val cfTheme = CFWebCheckoutThemeBuilder()
-                .setNavigationBarBackgroundColor("#000000") // Navbar का रंग
+                .setNavigationBarBackgroundColor("#000000") // Navbar color
                 .setNavigationBarTextColor("#FFFFFF")  // Navbar text color
                 .build()
 
-            // Web Checkout Payment Object बनाएं
+            // Create Web Checkout Payment Object
             val cfWebCheckoutPayment = CFWebCheckoutPaymentBuilder()
                 .setSession(cfSession)
                 .setCFWebCheckoutUITheme(cfTheme)
                 .build()
 
-            // ✅ Step 2: Payment Screen खोलें
+            // ✅ Step 2: Open Payment Screen
             CFPaymentGatewayService.getInstance().doPayment(this, cfWebCheckoutPayment)
         } catch (exception: CFException) {
             exception.printStackTrace()
         }
     }
 
-    // ✅ Step 3: Payment Callback Handle करें
+    // ✅ Step 3: Handle Payment Callback
     override fun onPaymentVerify(orderID: String) {
         Log.d("onPaymentVerify", "Payment verification required for Order ID: $orderID")
-        // Backend पर जाकर payment status check करें
+        // Check payment status on Backend
     }
 
     override fun onPaymentFailure(cfErrorResponse: CFErrorResponse, orderID: String) {

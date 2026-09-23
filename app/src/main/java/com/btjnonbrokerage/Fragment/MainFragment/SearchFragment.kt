@@ -176,7 +176,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
             binding.tv3bhk,
             binding.tv4bhk,
             binding.tv4bhkPlus
-        ) // Sabhi options ka list
+        ) // List of all options
 
         bhkOptions.forEach { textView ->
             textView.setOnClickListener {
@@ -220,7 +220,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
             setTextColor(ContextCompat.getColor(context, R.color.white)) // Selected color
         }
 
-        // Selected ko update karo
+        // Update the selected option
         selectedBhkTextView = selected
     }
 
